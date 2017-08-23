@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>web worker</title>
+</head>
+<body>
+	<p id='result'>0</p>
+	<input type="button" name="" value="点击触发" onclick='btnFn()'>
+	<input type="button" name="" value="关闭webWorker" onclick='closeFn()'>
+
+
+	<script src='./main.js'></script>
+	<script type="text/javascript">
+		function btnFn(){
+			main.newWorker()
+		}
+
+		function closeFn(){
+			main.stopWorker()
+		}
+	</script>
+</body>
+</html>
